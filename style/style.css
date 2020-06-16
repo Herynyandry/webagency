@@ -60,7 +60,7 @@ body {
     border-color: #5CADD3;
 }
 
-@media only screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
     .navbar {
         display: flex;
         flex-direction: column;
@@ -80,5 +80,153 @@ body {
     .nav-link:hover {
         border-bottom: 3px solid #5CADD3;
         border-top: none;
+    }
+}
+
+.carousel {
+    margin-top: 100px;
+    position: relative;
+}
+
+.carousel-background {
+    margin: 0;
+    position: relative;
+}
+
+.img-background {
+    width: 100%;
+}
+
+.chevron-carousel-left, .chevron-carousel-right {
+    position: absolute;
+    color: #ffffff;
+    font-size: 2em;
+    z-index: 2;
+    top: calc(50% - 17px);
+}
+
+.chevron-carousel-left {
+    left: 5px;
+}
+
+.chevron-left {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 70px;
+    width: 35px;
+    border-radius: 0 70px 70px 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.chevron-carousel-right {
+    right: 5px;
+}
+
+.chevron-right {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 70px;
+    width: 35px;
+    border-radius: 70px 0 0 70px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.carousel-title {
+    position: absolute;
+    width: 45%;
+    top: 40%;
+    left: 10%;
+}
+
+.title-carousel-title, .text-carousel-title {
+    color: #fff;
+}
+
+.title-carousel-title {
+    font-size: 3em;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+}
+
+.blue-title {
+    color: #5CADD3;
+}
+
+.text-carousel-title {
+    padding-bottom: 10px;
+    font-size: 2em;
+}
+
+.button-carousel-title {
+    border: 0;
+    display: block;
+    height: 48px;
+    width: 144px;
+    border-radius: 3px;
+    background-color: #5CADD3;
+    border-bottom: 3px solid #4494bb;
+    cursor: pointer;
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: bolder;
+    text-decoration: none;
+    text-align: center;
+    line-height: 3em;
+}
+
+@media all and (max-width: 2400px) {
+    .carousel-title {
+        top: 35%;
+    }
+
+    .title-carousel-title {
+        font-size: 2em;
+    }
+
+    .text-carousel-title {
+        font-size: 1em;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .carousel-title {
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .carousel-title {
+        top: 20%;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .carousel-title {
+        text-align: center;
+        margin-top: 50px;
+        width: 100%;
+        background-color: #F5F5F5;
+        left: 0;
+        padding: 20px;
+    }
+
+    .title-carousel-title {
+        color: #1e272e;
+    }
+
+    .text-carousel-title {
+        margin-top: 2em;
+        color: #5CADD3;
+    }
+
+    .img-background, .chevron-left, .chevron-right, .button-carousel-title {
+        display: none;
     }
 }
