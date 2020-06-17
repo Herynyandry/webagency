@@ -117,7 +117,6 @@ body {
     }
 
     .nav-link {
-        margin-top: 10px;
         border-bottom: 3px solid transparent;
     }
 
@@ -390,4 +389,116 @@ body {
     .article-group {
         width: 100%;
     }
+}
+
+.section-projets {
+    padding: 100px 0;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+}
+
+.nav-works {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+}
+
+.nav-link-work {
+    width: 110px;
+    height: 40px;
+    line-height: 40px;
+    background: #e5e5e5;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 60px;
+    text-decoration: none;
+    color: #64686d;
+    font-weight: bold;
+}
+
+.nav-link-work:hover {
+    background-color: #5cadd3;
+    height: 40px;
+    color: white;
+    border-bottom: 3px solid #4494bb;
+    position: relative;
+}
+
+.nav-link-work:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.nav-link-work:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.nav-work-icon {
+    display: none;
+}
+
+.nav-link-work:hover .nav-work-icon {
+    display: block;
+    position: absolute;
+    bottom: -13px;
+    left: 45%;
+    color: #4494bb;
+}
+
+.group-link-work {
+    max-width: 1150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    padding: 30px;
+}
+
+.work {
+    position: relative;
+    width: 250px;
+    padding: 15px 0;
+}
+
+.work-img {
+    width: 100%;
+}
+
+.work-description {
+    position: absolute;
+    top: 15px;
+    height: 60px;
+    width: 100%;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.work-description-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.work-icon {
+    position: absolute;
+    bottom: 40px;
+    right: 15px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    background-color: #5CADD3;
+    padding: 10px 10px;
+    font-size: 0.8em;
+}
+
+.work-description-text {
+    font-size: 0.9em;
+    padding: 2px 0 0 10px;
+    color: #fff;
+}
+
+.work:hover .work-description {
+    top: 122px;
+    opacity: 1;
 }
